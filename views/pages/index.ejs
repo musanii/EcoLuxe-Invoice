@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+
+<body class="bg-gradient-to-br from-gray-50 via-white to-emerald-50 text-gray-900">
+
+<main class="min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+<header
+  id="navbar"
+  class="fixed top-4 left-1/2 z-50 w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/40 px-8 py-4 shadow-sm transition-all duration-300">
+
+  <div class="flex items-center justify-between">
+    <div class="flex items-center">
+      <i class="fa-solid fa-coins text-2xl text-emerald-600 mr-3"></i>
+      <span class="text-xl font-semibold">EcoLuxe Invoice</span>
+    </div>
+
+    <a
+      href="/login"
+      class="rounded-full bg-emerald-600 px-5 py-2 text-sm font-medium text-white shadow transition hover:bg-emerald-700">
+      Log in
+    </a>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <section
+    class="mx-4 mt-10 flex flex-1 flex-col-reverse gap-12 rounded-3xl bg-white/70 backdrop-blur-xl border border-white/40 px-8 py-14 shadow-xl md:flex-row md:items-center md:px-16">
+
+    <!-- TEXT -->
+    <div class="md:w-2/5 space-y-6 animate-on-scroll">
+      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+        Invoicing, refined <br class="hidden md:block" />
+        for modern businesses
+      </h1>
+
+      <p class="text-lg text-gray-600 leading-relaxed">
+        EcoLuxe Invoice is a premium invoicing platform built for
+        <span class="font-medium text-gray-800">EcoLuxe Cleaning Company</span>.
+        Create beautiful, accurate invoices in seconds—without friction.
+      </p>
+
+      <a
+        href="/login"
+        class="ripple-btn inline-flex items-center gap-3 rounded-full bg-emerald-600 px-8 py-4 text-lg font-medium text-white shadow-md transition-transform duration-150 hover:bg-emerald-700 hover:shadow-xl active:scale-95">
+        Log in to your account
+        <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+    <!-- IMAGE -->
+    <div class="md:w-3/5 flex justify-center animate-on-scroll">
+      <div
+        class="rounded-3xl bg-white/60 backdrop-blur-lg border border-white/50 p-8 shadow-inner transition-transform duration-500 hover:scale-[1.02]">
+        <img
+          src="/images/hero.png"
+          alt="EcoLuxe growth"
+          width="420"
+          height="420"
+          class="object-contain"
+        />
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="md:w-3/5 flex justify-center animate-on-scroll">
+  <div class="relative group">
+
+    <!-- Floating PDF Label -->
+    <div class="absolute -top-3 left-6 z-10 rounded-full bg-emerald-600 px-3 py-1 text-xs font-medium text-white shadow-md">
+      PDF Preview
+    </div>
+
+    <!-- Invoice Card -->
+    <div
+      class="invoice-preview w-full max-w-lg rounded-3xl bg-white/90 backdrop-blur-xl border border-white/60 shadow-xl p-6">
+
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-lg font-semibold">Invoice #1024</h3>
+        <span class="text-sm text-emerald-600 font-medium">Paid</span>
+      </div>
+
+      <!-- Content -->
+      <div class="mb-4 text-sm text-gray-600">
+        <p class="font-medium text-gray-800">Client</p>
+        <p>GreenHomes Ltd</p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="flex justify-between text-sm">
+          <span>Deep Cleaning Service</span>
+          <span>$250.00</span>
+        </div>
+        <div class="flex justify-between text-sm">
+          <span>Office Sanitization</span>
+          <span>$180.00</span>
+        </div>
+      </div>
+
+      <div class="my-4 border-t border-gray-200"></div>
+
+      <div class="flex justify-between font-semibold">
+        <span>Total</span>
+        <span>$430.00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!--Stats-->
+  <section
+  class="mx-4 mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 rounded-3xl bg-white/70 backdrop-blur-xl border border-white/40 px-8 py-12 shadow-lg animate-on-scroll">
+
+  <div class="text-center">
+    <p class="text-4xl font-semibold text-emerald-600 counter" data-target="12480">0</p>
+    <p class="mt-2 text-sm text-gray-600">Invoices Generated</p>
+  </div>
+
+  <div class="text-center">
+    <p class="text-4xl font-semibold text-emerald-600 counter" data-target="98">0</p>
+    <p class="mt-2 text-sm text-gray-600">Accuracy Rate (%)</p>
+  </div>
+
+  <div class="text-center">
+    <p class="text-4xl font-semibold text-emerald-600 counter" data-target="320">0</p>
+    <p class="mt-2 text-sm text-gray-600">Active Clients</p>
+  </div>
+
+</section>
+
+
+  <!-- TRUST / TESTIMONIAL -->
+  <section class="mx-4 mt-16 mb-10 rounded-3xl bg-white/70 backdrop-blur-xl border border-white/40 px-8 py-14 shadow-lg animate-on-scroll">
+
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="text-sm uppercase tracking-widest text-emerald-600 mb-4">
+        Trusted & Reliable
+      </p>
+
+      <h2 class="text-3xl font-semibold mb-6">
+        Built for accuracy, speed, and confidence
+      </h2>
+
+      <p class="text-lg text-gray-600 mb-10">
+        EcoLuxe Invoice helps teams invoice faster, reduce errors,
+        and present a professional brand to every client.
+      </p>
+    </div>
+
+    <!-- TESTIMONIAL CARD -->
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+
+      <div class="rounded-2xl bg-white/80 backdrop-blur-lg border border-white/50 p-6 shadow-sm hover:shadow-md transition">
+        <p class="text-gray-700 italic">
+          “Invoices look clean, professional, and consistent.
+          It saves us hours every week.”
+        </p>
+        <div class="mt-4 text-sm font-medium text-gray-900">
+          Operations Manager
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white/80 backdrop-blur-lg border border-white/50 p-6 shadow-sm hover:shadow-md transition">
+        <p class="text-gray-700 italic">
+          “Simple, elegant, and fast—exactly what we needed.”
+        </p>
+        <div class="mt-4 text-sm font-medium text-gray-900">
+          Finance Lead
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white/80 backdrop-blur-lg border border-white/50 p-6 shadow-sm hover:shadow-md transition">
+        <p class="text-gray-700 italic">
+          “EcoLuxe Invoice elevated how we present our business.”
+        </p>
+        <div class="mt-4 text-sm font-medium text-gray-900">
+          Company Director
+        </div>
+      </div>
+
+    </div>
+  </section>
+<%- include('../partials/script') %>
+  <footer class="mx-4 mb-6 mt-20 rounded-3xl bg-white/70 backdrop-blur-xl border border-white/40 px-8 py-10 shadow-sm">
+
+  <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+
+    <!-- Brand -->
+    <div>
+      <div class="flex items-center mb-3">
+        <i class="fa-solid fa-coins text-xl text-emerald-600 mr-2"></i>
+        <span class="font-semibold">EcoLuxe Invoice</span>
+      </div>
+      <p class="text-sm text-gray-600">
+        Premium invoicing software for modern service businesses.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <p class="mb-3 text-sm font-medium text-gray-800">Product</p>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li>Invoices</li>
+        <li>Clients</li>
+        <li>Reports</li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <p class="mb-3 text-sm font-medium text-gray-800">Company</p>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+        <li>Support</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mt-8 border-t border-gray-200 pt-4 text-center text-xs text-gray-500">
+    © 2026 EcoLuxe Cleaning Company. All rights reserved.
+  </div>
+</footer>
+
+
+</main>
+
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
+
+<!--RIPPLE ANIMATION SCRIPT-->
+<script>
+  document.querySelectorAll('.ripple-btn').forEach(button => {
+    button.addEventListener('click', function (e) {
+      const circle = document.createElement('span');
+      const diameter = Math.max(this.clientWidth, this.clientHeight);
+      const radius = diameter / 2;
+
+      circle.style.width = circle.style.height = `${diameter}px`;
+      circle.style.left = `${e.clientX - this.offsetLeft - radius}px`;
+      circle.style.top = `${e.clientY - this.offsetTop - radius}px`;
+      circle.classList.add('ripple');
+
+      const ripple = this.querySelector('.ripple');
+      if (ripple) ripple.remove();
+
+      this.appendChild(circle);
+    });
+  });
+</script>
+<!-- COUNTER ANIMATION SCRIPT -->
+<script>
+  const counters = document.querySelectorAll('.counter');
+
+  const runCounter = counter => {
+    const target = +counter.dataset.target;
+    let count = 0;
+    const increment = target / 80;
+
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        counter.innerText = Math.ceil(count);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target.toLocaleString();
+      }
+    };
+
+    update();
+  };
+
+  const counterObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          runCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  counters.forEach(counter => counterObserver.observe(counter));
+</script>
+
+<!--NaVBAR SCROLL-->
+<script>
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      navbar.classList.add(
+        'shadow-lg',
+        'bg-white/80'
+      );
+    } else {
+      navbar.classList.remove(
+        'shadow-lg',
+        'bg-white/80'
+      );
+    }
+  });
+</script>
+
+
+
+<!-- ANIMATION STYLES -->
+<style>
+
+    .invoice-preview {
+    transform: translateY(12px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .group:hover .invoice-preview {
+    transform: translateY(0);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.25);
+  }
+
+     .ripple-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple-btn span.ripple {
+    position: absolute;
+    border-radius: 9999px;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out both;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+</body>
+</html>

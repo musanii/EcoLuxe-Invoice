@@ -1,0 +1,18 @@
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<% if (typeof info !== 'undefined') { %>
+<script>
+const bgColors = {
+error: "#EF4B53",
+success: "#00B5FF"
+}
+Toastify({
+    text: "<%= info.message %>",
+    duration: 3000,
+    close: true,
+    gravity: "bottom",
+    position: "right",
+    backgroundColor: bgColors["<%= info.type %>"] || "#00B5FF",
+    stopOnFocus: true,
+}).showToast();
+</script>
+<% } %>
